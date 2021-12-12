@@ -1,0 +1,349 @@
+body{
+    background-color: rgba(19, 19, 19, 0.945);
+    /* background-image: url(../images/background.gif); */
+    margin: 0px;
+    transition: 700ms ease-in-out;
+}
+.logo img{
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+    width: 50px;
+    height: 100%;
+}
+.mainlist,a{
+    display: inline-block;
+    align-content: center;
+    padding: 5% 0% 25% 0%;
+    color: rgb(216, 212, 214);
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 0;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
+}
+
+nav li .u1{
+    width: 250px;
+    visibility: hidden;
+    position: absolute;
+    top: 160px;
+    left: 15%;
+    padding-left: 0px;
+    margin-left: 0px;
+    z-index: -1;
+}
+nav li:hover .u1{
+    width: 250px;
+    height: min-content;
+    padding-left: 35px;
+    visibility: visible;
+    position: absolute;
+    top: 160px;
+    left: 42%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    word-break: none;
+    transition: 800ms ease-in-out;
+    text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
+}
+
+nav li .u2{
+    width: 250px;
+    visibility: hidden;
+    position: absolute;
+    top: 225px;
+    left: 15%;
+    z-index: -1;
+}
+nav li:hover .u2{
+    z-index: -1;
+    width: 250px;
+    height: min-content;
+    padding-left: 35px;
+    visibility: visible;
+    position: absolute;
+    top: 225px;
+    left: 42%;
+    display: flex;
+    flex-direction: column;
+    word-break: none;
+    transition: 800ms ease-in-out;
+    text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
+}
+nav li ul a{
+    padding: 10%;
+    font-size: 20px;
+}
+nav li ul .extra1:hover{
+    font-size: 22px;
+}
+nav li ul .extra2:hover{
+    font-size: 22px;
+}
+.extra1,.extra{
+    background-color: transparent;
+}
+nav a:hover{
+    font-size: 30px;
+    display: inline-block;
+    color: rgb(231, 227, 221);
+    transition: 500ms ease-in-out;
+    text-shadow: 1px 1px rgba(168, 49, 122, 0.308);
+}
+.active{
+    display: inline-block;
+    color: rgb(231, 227, 221);
+    text-decoration: solid 3px overline underline;
+    transition: 500ms ease-in-out;
+    font-size: 28px;
+    text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
+}
+nav{
+    position: fixed;
+    padding-top: 5%;
+    left: .5px;
+    display: block;
+    height: fit-content;
+    width: 200px;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(68, 68, 68, 0.363);
+}
+.profile img{
+    width: 15rem;
+    left: 25%;
+    bottom: 0%;
+    z-index: -1;
+    position: fixed;
+    filter: grayscale(30%);
+    -webkit-filter: grayscale(30%);
+}
+.info{
+    display: grid;
+    justify-items: center;
+    margin-top: 13%;
+    position: absolute;
+    top: 10%;
+    width: 577px;
+    left: 50%;
+}
+.info h1 {
+    color: rgb(243, 237, 230);
+}
+.personal p{
+    color: rgb(243, 237, 230);
+}
+.personal{
+    position: absolute;
+    left: 45%;
+    height: 100vh;
+    align-items: center;
+}
+
+.card-view{
+    position: absolute;
+    left: 15px;
+    top: 45%;
+    display: flex;
+    
+}
+.card{
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 10% 10% 10% 10%;
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+    margin: 0.5rem;
+    background-color: rgba(49, 48, 48, 0.089);
+}
+.card:hover{
+    height: 200px;
+    transform: translateY(-35px);
+    transition: 350ms ease-in-out;
+    -ms-transform: translateY(-35px);
+    background-color: rgba(131, 129, 130, 0.192);
+}
+.card img{
+    border-radius: 10% 10% 0% 0%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.card:hover .catagory{
+    color: rgb(216, 212, 214);
+    text-shadow: 4px 3px 4px #38546B;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    transition: 550ms ease-in-out;
+    transform: translateY(-25px);
+}
+.catagory{
+    color: rgb(216, 212, 214);
+    text-shadow: 4px 3px 4px #38546B;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.card a{
+    text-decoration: none;
+    box-decoration-break: none;
+}
+.main{
+    display: flex;
+}
+
+.objective{
+    top: 0px;
+    margin-left: 250px;
+    height: max-content;
+    color:  rgb(216, 212, 214);
+    height: max-content;
+    padding-bottom: 19px;
+}
+.flex-item {
+    width: 60vw;
+    height: 11rem;
+    background-color: #3d3d3d;
+    margin: 1em 1em 0 10%;
+    padding: .5em 0 0 2em;
+    border-radius: 50px;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.form1{
+    display: flex;
+    width: min-content;
+    align-items: center;
+    left: 55%;
+    top: 10%;
+    position: relative;
+    justify-content: center;
+}
+
+/* 
+@media screen and (max-width: 629px) {
+    
+    body{
+        transition: all 500ms ease-in-out;
+    }
+    nav{
+        position: absolute;
+        height: 100%;
+    }
+    nav a,li{
+        font-size: 15px;;
+    }
+    .profile img{
+        position: absolute;
+        width: 25%;
+        right: 20%;
+        left: 35%;
+        
+    }
+    .info.p,h1{
+        position: absolute;
+        top: 10%;
+        left:25%;
+    }
+    .card-view{
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        z-index: 1;
+        border-radius: 25% 25% 25% 25%;
+        width: 150px;
+        height: max-content;
+        margin-bottom: 2em;
+        margin-left: 60%;
+        background-color: rgb(226, 13, 13);
+    }
+    
+}
+
+@media screen and (max-width: 485px) {
+
+    body{
+        transition: all 500ms ease-in-out;
+    }
+    nav a,li{
+        display: block;
+        overflow: visible;
+        font-size: 15px;;
+        padding-top: 1%;
+        padding-left: 0.5%;
+
+    }
+    nav li:hover ul{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top:32%;
+        left: 25%;
+        transition: 800ms ease-in-out;
+        z-index: 1;
+        padding-left: 0px;
+        max-width: 160px;
+        background-color: rgba(68, 68, 68, 0.253);
+        text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
+    }
+    nav{
+        z-index: -1;
+        height: 100%;
+    }
+    .info.p,h1{
+        font-size: 25px;
+        position: absolute;
+        top: 6%;
+        left:35%;
+    }
+    
+    .profile img{
+        width: 35%;
+        z-index: 3;
+        position: fixed;
+        top: 18%;
+        left: 60%;
+    }
+    
+} */
