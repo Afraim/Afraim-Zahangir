@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(19, 19, 19, 0.945);
+    background-color: rgb(19, 19, 19);
     /* background-image: url(../images/background.gif); */
     margin: 0px;
     transition: 700ms ease-in-out;
@@ -221,7 +221,11 @@ nav{
     grid-template-columns: 37vw 22em;
     justify-content: center;
 }
-
+hr{
+    color: white;
+    width: 100%;
+    
+}
 .flex-item {
     width: 50vw;
     height: 11rem;
@@ -235,7 +239,7 @@ nav{
     height: 9em;
     background-color: #3d3d3d;
     margin: 1em 0em 0px 0;
-    padding: 0.25em 0 6px 1.5em;
+    padding: 0.25em 1em 1.5em;
     border-radius: 50px;}
 
 .flex {
@@ -258,6 +262,7 @@ h3 {
 .title{
     display: flex;
     justify-content: space-around;
+    color: white;
 }
 .flex-container {
     display: flex;
@@ -275,363 +280,41 @@ h3 {
 .Right-center{
     width: 84vw;
     height: auto;
-    position: relative;
     color:rgb(216, 212, 214);
     z-index: -1;
+    margin: 0% auto;
 }
 
 .Boxes{
     margin-left: 18%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
-@media screen and (max-width: 450px) {
-    body{
-        height: 100vh;
-        width: 100vw;
-    }
-    .open{
-        display: block;
-    }
-    .logo img{
-        position: relative;
-        top: 3px;
-        left: 18px;
-        z-index: 0;
-    }
-    nav {
-        display: none; /* Hide the nav initially on small screens */
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(68, 68, 68, 0.9);
-        z-index: 2;
-        overflow-y: auto;
-    }
-
-    nav ul {
-        list-style-type: none;
-        padding: 20px;
-        text-align: right;
-    }
-
-    nav ul li {
-        margin-bottom: 20px;
-    }
-
-    nav a {
-        color: rgb(216, 212, 214);
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
-        padding: 10px;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: rgb(231, 227, 221);
-    }
-
-    .nav-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 3;
-    }
-
-    .nav-toggle img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .nav-toggle.open {
-        z-index: 5; /* Ensure it's below the nav */
-    }
-
-    .nav-toggle.open + nav {
-        display: block; /* Show the nav when the button is clicked */
-    }
-
-    .image.profile {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .personal {
-        padding: 20px;
-        margin-top: 100px; /* Adjust as needed */
-    }
-
-    .card-view {
-        flex-direction: column;
-        position: absolute;
-        left: 10em;
-        top: 45%;
-        display: flex;
-    }
-
-    .card {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .personal {
-        padding: 20px;
-        margin-top: 50vh; /* Adjust as needed */
-        transform: translate(0, -50%);
-    }
-
-    .info {
-            display: grid;
-            justify-items: center;
-            /* margin-top: 13%; */
-            position: absolute;
-            /* top: 10%; */
-            width: 560px;
-            left: -11em;
-    }
-    .profile img {
-        width: 15rem;
-        left: 0;
-        bottom: 0%;
-        z-index: -1;
-        position: fixed;
-        filter: grayscale(30%);
-        -webkit-filter: grayscale(30%);
-    }nav li .u1{
-        width: 250px;
-        visibility: hidden;
-        position: absolute;
-        top: 160px;
-        left: 0%;
-        padding-left: 0px;
-        margin-left: 0px;
-        z-index: -1;
-    }
-    nav li:hover .u1{
-        width: 250px;
-        height: min-content;
-        padding-left: 35px;
-        visibility: visible;
-        position: absolute;
-        top: 160px;
-        left: 9%;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        word-break: none;
-        transition: 800ms ease-in-out;
-        text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
-    }
-    nav li .u2{
-        width: 250px;
-        visibility: hidden;
-        position: absolute;
-        top: 160px;
-        left: 0%;
-        padding-left: 0px;
-        margin-left: 0px;
-        z-index: -1;
-    }
-    nav li:hover .u2{
-        width: 250px;
-        height: min-content;
-        padding-left: 35px;
-        visibility: visible;
-        position: absolute;
-        top: 160px;
-        left: 9%;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        word-break: none;
-        transition: 800ms ease-in-out;
-        text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
-    }
-
+.Boxes-title{
+    align-items: center;
+    align-self: center;
 }
-@media screen and (max-width: 520px) {
-    body{
-        height: 100vh;
-        width: 100vw;
-    }
-    nav {
-        display: none; /* Hide the nav initially on small screens */
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(68, 68, 68, 0.9);
-        z-index: 2;
-        overflow-y: auto;
-    }
+.Boxes h2{
+    text-align: center;
+}
+.images{
+    width: 80%;
+    max-height: max-content;
+    margin: 0% auto;
+    text-align: center;
+}
+.Boxes a img{
+    width: 55%; 
+    margin: 0% auto; 
+    text-align: center; 
+    align-self: center; 
+    align-items: center;
+}
+.Boxes .description{
+    font-size: medium;
+}
+.gamelink{
+    padding: 5% 0% 5% 0%;
+    font-family: 'Courier New', Courier, monospace;
 
-    nav ul {
-        list-style-type: none;
-        padding: 20px;
-        text-align: right;
-    }
-
-    nav ul li {
-        margin-bottom: 20px;
-    }
-
-    nav a {
-        color: rgb(216, 212, 214);
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
-        padding: 10px;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: rgb(231, 227, 221);
-    }
-
-    .nav-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 3;
-    }
-    .open{
-        display: block;
-    }
-    .logo img{
-        position: relative;
-        top: 3px;
-        left: 18px;
-        z-index: 0;
-    }
-    .nav-toggle img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .nav-toggle.open {
-        z-index: 5; /* Ensure it's below the nav */
-    }
-
-    .nav-toggle.open + nav {
-        display: block; /* Show the nav when the button is clicked */
-    }
-
-    .image.profile {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .personal {
-        padding: 20px;
-        margin-top: 100px; /* Adjust as needed */
-    }
-
-    .card-view {
-        flex-direction: column;
-        position: absolute;
-        left: 1em;
-        top: 45%;
-        display: flex;
-    }
-
-    .card {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .personal {
-        padding: 20px;
-        margin-top: 50vh; /* Adjust as needed */
-        transform: translate(0, -50%);
-    }
-
-    .info {
-            display: grid;
-            justify-items: center;
-            /* margin-top: 13%; */
-            position: absolute;
-            /* top: 10%; */
-            width: 560px;
-            left: -11em;
-    }
-    .profile img {
-        width: 9rem;
-        left: 0;
-        bottom: 0%;
-        z-index: -1;
-        position: fixed;
-        filter: grayscale(30%);
-        -webkit-filter: grayscale(30%);
-    }
-    nav a:hover{
-        font-size: 30px;
-        display: inline-block;
-        color: rgb(231, 227, 221);
-        transition: 500ms ease-in-out;
-        text-shadow: 1px 1px rgba(168, 49, 122, 0.308);
-    }
-    nav li .u1{
-        width: 250px;
-        visibility: hidden;
-        position: absolute;
-        top: 160px;
-        left: 0%;
-        padding-left: 0px;
-        margin-left: 0px;
-        z-index: -1;
-    }
-    nav li:hover .u1{
-        width: 250px;
-        height: min-content;
-        padding-left: 35px;
-        visibility: visible;
-        position: absolute;
-        top: 160px;
-        left: 9%;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        word-break: none;
-        transition: 800ms ease-in-out;
-        text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
-    }
-    nav li .u2{
-        width: 250px;
-        visibility: hidden;
-        position: absolute;
-        top: 160px;
-        left: 0%;
-        padding-left: 0px;
-        margin-left: 0px;
-        z-index: -1;
-    }
-    nav li:hover .u2{
-        width: 250px;
-        height: min-content;
-        padding-left: 35px;
-        visibility: visible;
-        position: absolute;
-        top: 160px;
-        left: 9%;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        word-break: none;
-        transition: 800ms ease-in-out;
-        text-shadow: 2px 2px rgba(168, 49, 122, 0.308);
-    }
 }
